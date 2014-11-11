@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'rails',     '~> 3.2'
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = [".gitignore", "Gemfile", "LICENSE.txt", "README.md", "Rakefile", "lib/respond_to_parent.rb", "lib/respond_to_parent/action_controller_methods.rb", "lib/respond_to_parent/version.rb", "respond_to_parent.gemspec"] 
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
